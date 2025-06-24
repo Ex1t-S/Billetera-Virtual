@@ -2,7 +2,6 @@
 
 > **Materia:** Taller de Lenguajes II  
 > **Autor:** German Arroyo  
-> **Universidad:** *(completá si querés)*
 
 Este repositorio corresponde a un **proyecto desarrollado para la facultad**.  
 El objetivo es aplicar y consolidar conocimientos sobre **Java, POO, patrones MVC/DAO, bases de datos** e **interacción con APIs externas**, desarrollando una aplicación funcional de billetera virtual.
@@ -20,7 +19,7 @@ El proyecto integra:
 Aplicación que permite gestionar activos en **monedas FIAT** y **CRIPTOMONEDAS**, consultar balances, ver precios en tiempo real y mantener historial de transacciones.
 
 
-## 🚀 Características principales
+##  Características principales
 
 - 📝 Registro y autenticación de usuarios
 - 💰 Gestión de billetera: agregá, eliminá y visualizá activos en FIAT (ARS, USD, EUR) y CRIPTO (BTC, ETH, etc.)
@@ -28,19 +27,6 @@ Aplicación que permite gestionar activos en **monedas FIAT** y **CRIPTOMONEDAS*
 - 📊 Historial de transacciones (compra, venta y transferencias)
 - 🏦 Balance general en diferentes monedas
 - 🛠️ Arquitectura profesional: MVC, DAO y POO
-
-
-## 🗂️ Estructura del proyecto
-
-/src
-/model # Entidades del dominio
-/controller # Lógica de negocio
-/view # Interfaces gráficas (Swing/JavaFX o consola)
-/dao # Acceso y manipulación de la base de datos
-/bd # Utilidades y entidades persistentes
-/database_schema.sql # (si existe)
-README.md
-.gitignore
 
 
 ## 🛠️ Instalación y ejecución
