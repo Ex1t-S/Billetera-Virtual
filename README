@@ -1,0 +1,93 @@
+# 💼 Proyecto Académico — Billetera Virtual
+
+Este repositorio corresponde a un **proyecto desarrollado para la facultad**, en el marco de la materia [Taller de lenguajes II] .  
+El objetivo del trabajo es **aplicar y consolidar los conocimientos adquiridos sobre Java, programación orientada a objetos, patrones de diseño (MVC, DAO), manejo de bases de datos, e interacción con APIs externas** mediante el desarrollo de una aplicación funcional de billetera virtual.
+
+El desarrollo de este proyecto permitió integrar:
+- Modelado de datos y relaciones entre entidades.
+- Lógica de negocio y controladores.
+- Persistencia con base de datos y acceso vía DAOs.
+- Implementación de interfaz gráfica.
+- Práctica con consumo de servicios externos (APIs de precios cripto).
+
+# 💸 Billetera Virtual Java
+
+Aplicación de billetera virtual desarrollada en Java, que permite a los usuarios gestionar activos en monedas FIAT y CRIPTOMONEDAS, consultar balances y precios en tiempo real, y mantener un historial completo de transacciones.
+
+---
+
+## 🚀 Características principales
+
+- **Registro y autenticación de usuarios**.
+- **Gestión de billetera**: agregá, eliminá y visualizá activos en monedas fiat (ARS, USD, EUR, etc.) y criptomonedas (BTC, ETH, etc.).
+- **Consulta de precios en tiempo real** de criptomonedas (usando API externa).
+- **Historial de transacciones**: compra, venta y transferencias, con filtros y detalles.
+- **Balance general** en diferentes monedas.
+- **Arquitectura profesional**: patrón MVC, DAO y modelo orientado a objetos.
+
+---
+
+## 🗂️ Estructura del proyecto
+
+- `src/model/` — Entidades del dominio: Usuario, Persona, Moneda, Activo, Wallet, etc.
+- `src/controller/` — Controladores (lógica de negocio y orquestación).
+- `src/view/` — Interfaces gráficas (Swing/JavaFX o consola).
+- `src/dao/` — Acceso y manipulación de la base de datos (CRUD).
+- `src/bd/` — Utilidades y entidades persistentes (BD).
+- Otros archivos de configuración y utilidad.
+
+---
+
+## 🛠️ Instalación y ejecución
+
+1. **Clonar el repositorio:**
+
+    ```bash
+    git clone https://github.com/Ex1t-S/Billetera-Virtual.git
+    cd Billetera-Virtual
+    ```
+
+2. **Configurar la base de datos:**
+    - El proyecto utiliza una base relacional (por defecto, SQLite/MySQL).
+    - Revisá la configuración en `ConexionBD.java`.
+    - Si es necesario, creá las tablas usando el script SQL incluido (si existe) o la primera ejecución del programa.
+
+3. **Compilar y ejecutar el proyecto:**
+    - Usá tu IDE favorito (IntelliJ, Eclipse, NetBeans) o por consola:
+    ```bash
+    javac -d bin src/**/*.java
+    java -cp bin MainClass # Reemplazá "MainClass" por tu clase principal
+    ```
+
+4. **Usuarios de prueba:**
+    - Hay cuentas ya cargadas con saldo inicial.  
+      Ejemplo:  
+      **Usuario:** vs@gmail.com  
+      **Contraseña:** Ceres789  
+    - Podés crear nuevos usuarios desde la pantalla de registro.
+
+5. **Nota sobre el balance:**  
+   Si hacés una compra y no ves el balance actualizado, cerrá sesión y volvé a iniciar o usá el botón "Actualizar".
+
+---
+
+## 🧩 Dependencias
+
+- Java 8 o superior.
+- Driver JDBC para la base de datos elegida (incluido para SQLite/MySQL).
+- (Opcional) Librerías HTTP para consumo de APIs externas de precios cripto.
+
+
+## 📈 Mejoras futuras
+
+- Interfaz gráfica avanzada (mejorar la UX).
+- Notificaciones automáticas de cambios de saldo.
+- Soporte para más monedas y nuevas operaciones.
+- Test unitarios y cobertura.
+
+---
+
+## 📜 Créditos y licencia
+
+Desarrollado por **German Arroyo** para fines educativos y prácticos.  
+Licencia: MIT
