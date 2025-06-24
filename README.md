@@ -46,7 +46,6 @@ Aplicación que permite gestionar activos en **monedas FIAT** y **CRIPTOMONEDAS*
     - O desde consola:
     ```bash
     javac -d bin src/**/*.java
-    java -cp bin MainClass  # Cambiá por tu clase principal
     ```
 
 4. **Usuarios de prueba:**
